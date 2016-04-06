@@ -1,0 +1,85 @@
+canvas {
+  background-color:black;
+  height: 100%;
+  width: 100%;
+}
+
+.burgerHealth {
+    width: calc(49% - 4px);
+    height:20%;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: lightcoral;
+    float:left;
+}
+
+.burgerInnerHealth {
+    height:100%;
+    width:75%;
+    border-radius: 7px;
+    background-color:green;
+    transition: width .5s linear;
+}
+
+.enemyHealth {
+    width:calc(49% - 4px);
+    border: 2px solid darkred;
+    border-radius: 10px;
+    height:20%;
+    background-color: lightcoral;
+    float:right;
+}
+.enemyInnerHealth {
+    height:100%;
+    width:30%;
+    border-radius: 7px;
+    background-color:darkred;
+    transition: width .5s linear;
+}
+
+.increaseAttack {
+
+}
+
+.attackUpBar {
+
+}
+
+.healthUpBar {
+
+}
+
+.defenseUpBar {
+
+}
+
+.wrapper {
+  display: table;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.canvas-container {
+  position: relative;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+
+
+#gameScreen {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <link rel="stylesheet" type="text/css" href="holyBurger.css">
+        <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+        <script src="holyBurgerObject.js"></script>
+        <script src="holyBurger.js"></script>
+        <script src="enemyObject.js"></script>
+        <script src="gameObject.js"></script>
+    </head>
+
+    <body onload="initializeScreen()">
+        <div class="wrapper">
+            <div class="container">
+                <div class="canvas-container">
+                    <canvas id="gameScreen" height="800" width="480"></canvas>
+                    <p style="font-family:Slackey; position:absolute; top:-5000px">.</p> <!-- Necessary for font loading. DO NOT REMOVE! -->
+                   
+
+                    <button style="position:absolute;bottom:2%;left:2%;" onclick="createEnemy();">CREATE</button>
+                    <button style="position:absolute;bottom:2%;left:25%;" onclick="destroyEnemy();">DESTROY</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="circlebars.js"></script>
+</html>
